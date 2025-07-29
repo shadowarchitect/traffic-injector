@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Inject Loop</title>
-    <meta charset="UTF-8" />
-    <script>
-      setInterval(() => {
-        const iframe = document.getElementById("injector")
-        iframe.src = "https://traffic-injector.onrender.com?" + Date.now()
-      }, 30000) // suntik setiap 30 detik
-    </script>
-  </head>
-  <body>
-    <iframe
-      id="injector"
-      src="https://traffic-injector.onrender.com"
-      width="1"
-      height="1"
-      style="border:0; position:absolute; left:-9999px;"
-    ></iframe>
-  </body>
+<head>
+  <title>Inject View</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>Loading injected view...</h1>
+  <iframe 
+    src="https://pitradecenter.com" 
+    width="100%" 
+    height="1000px" 
+    style="border:none;"
+  ></iframe>
+</body>
 </html>
