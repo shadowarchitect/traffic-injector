@@ -39,6 +39,7 @@ function getRandomUSIP() {
   const d = Math.floor(Math.random() * 256)
   return `${a}.${b}.${c}.${d}`
 }
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`)
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`🔥🔥🔥 PORT YANG DIPAKAI: ${process.env.PORT || 3000}`)
 })
+
