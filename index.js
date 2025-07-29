@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT
 app.get('/', (req, res) => {
   const delay = Math.floor(Math.random() * 8000) + 8000 // 8–16 detik
   const targetURL = 'https://pitradecenter.com/chatgpt-agent-for-crypto/'
